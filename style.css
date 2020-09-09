@@ -1,22 +1,72 @@
-h1 h2 p {
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main, header, h1, h2, p, footer {
     font-family: Trebuchet MS, sans-serif;
     font-size: 16px;
     inline-size: 1.5;
     color: #303846
 }
 
+header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 20px;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+}
+
+.name {
+    position: fixed;
+    top: 5px;
+    left: 75px;
+    height: 35px;
+}
+
+.headermenu{
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    display: flex;
+    flex-direction: row;    
+}
+
+.hdr-menu-li {
+    box-sizing: content;
+    padding-right: 30px;
+    
+}
+
+main {
+    position: fixed;
+    margin-top: 60px;
+    padding-left: 20px;
+}
+
 h1 {
     font-size: 3em;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 h2 {
     font-size: 1.8em;
-    margin-top: 0;
     margin-bottom: 0.5em;
 }
 
-.italic {
-    font-style: italic;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footertext {
+    text-align: center;
 }
