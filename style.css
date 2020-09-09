@@ -1,28 +1,33 @@
+/* classes basically in the order 
+as they appear in html */ 
+
+/* global */
 body {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-main, header, h1, h2, p, footer {
+main, header, h2, p, footer, a {
     font-family: Trebuchet MS, sans-serif;
     font-size: 16px;
     inline-size: 1.5;
     color: #303846
 }
-
+/* header*/
 header {
     position: fixed;
-    height: 60px;
-    width: 100%;
     top: 0;
     left: 0;
+    height: 60px;
+    width: 100%;   
     padding: 5px 20px;
 }
 
 .logo {
-    height: 35px;
-    width: 35px;
+    margin-top: 6px;
+    height: 37px;
+    
 }
 
 .name {
@@ -35,32 +40,81 @@ header {
 .headermenu{
     position: fixed;
     top: 5px;
-    right: 15px;
-    display: flex;
-    flex-direction: row;    
+    right: 15px;    
 }
 
 .hdr-menu-li {
+    display: inline;
     box-sizing: content;
-    padding-right: 30px;
-    
+    padding-right: 30px;    
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover, a:active {     
+   color: black;
+   text-decoration: underline;
+}
+/* main */
 main {
     position: fixed;
-    margin-top: 60px;
-    padding-left: 20px;
+    width: 100%;
+    margin-top: 60px;  
+}    
+/* main - 1st section – covering image */
+.first-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    background: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
 }
 
+.sect1-logo {
+    width: 12%;
+}
+    
 h1 {
+    margin: 0;
     font-size: 3em;
+    color: white;   
 }
 
+.slogan {
+    font-size: 1.2em;
+    color: white;
+}
+.border-btn {
+    padding: 0 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: white solid 1px;
+    border-radius: 10px;
+}
+
+.border-btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+.border-btn>a:hover, .border-btn>a:active {
+    font-weight: bolder;
+}
 h2 {
-    font-size: 1.8em;
     margin-bottom: 0.5em;
+    font-size: 1.8em;
 }
-
+/* footer */
 footer {
     position: fixed;
     bottom: 0;
