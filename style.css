@@ -1,0 +1,22 @@
+h1 h2 p {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 16px;
+    inline-size: 1.5;
+    color: #303846
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.italic {
+    font-style: italic;
+}
