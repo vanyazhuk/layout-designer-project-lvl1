@@ -6,13 +6,10 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-main, header, h2, p, footer, a {
+    color: #303846;
     font-family: Trebuchet MS, sans-serif;
     font-size: 16px;
     inline-size: 1.5;
-    color: #303846
 }
 /* header*/
 header {
@@ -26,8 +23,7 @@ header {
 
 .logo {
     margin-top: 6px;
-    height: 37px;
-    
+    height: 37px;   
 }
 
 .name {
@@ -51,6 +47,7 @@ header {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover, a:active {     
@@ -80,22 +77,24 @@ main {
     background-position: center;   
 }
 
+.white {
+    color: white;
+}
+
 .sect1-logo {
     width: 12%;
 }
     
 h1 {
     margin: 0;
-    font-size: 3em;
-    color: white;   
+    font-size: 3em;  
 }
 
 .slogan {
     font-size: 1.2em;
-    color: white;
 }
 .border-btn {
-    padding: 0 10px;
+    padding: 10px;
     font-size: 1em;
     font-weight: bold;
     border: white solid 1px;
@@ -104,7 +103,6 @@ h1 {
 
 .border-btn>a {
     text-decoration: none;
-    color: white;
 }
 
 .border-btn>a:hover, .border-btn>a:active {
