@@ -22,13 +22,15 @@
 		</nav> 
 	</header>
 	<main>
-		<section class="first-section">
+		<section class="flex-column-center first-section">
 			<img src="images/logo.svg" class="sect1-logo"> 
 			<h1 >ЖК «Лунное море»</h1>
 			<p class="slogan">Место, откуда не хочется улетать</p>
-			<div class="border-btn"><a href="">Забронировать</a></div>
+			<div class="btn sect1-btn">
+				<a href="#booking">Забронировать</a>
+			</div>
 		</section>
-		<section class="article-section" id="article-section">
+		<section id="article-section" class="article-section">
 			<article>
 				<h2>Уникальный вид</h2>
 				<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
@@ -42,7 +44,7 @@
 				<p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
 			</article>
 		</section>
-		<section class="img-section grey" id="image-section1">
+		<section id="image-section1" class="img-section grey">
 			<div class="img-sect-article">
 				<h2>О ЖК Лунное море</h2>
 				<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -51,14 +53,49 @@
 			<div class="image-box"><img src="images/moon-1.jpg" alt="moon is beautiful">
 			</div>
 		</section>
-        <section class="img-section" id="image-section2">
+        <section id="image-section2" class="img-section">
 			<div class="image-box"><img src="images/moon-2.jpg" alt="life is beautiful">
 			</div>
 			<div class="img-sect-article">
 			<div >
 				<h2>Места для отдыха</h2>
-				<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры. Дома располагаются в новом районе «Лунные моря».</p>
-				<p>При необходимости есть автобусы до района «Лунный материк».</p>
+				<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+				<p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+			</div>
+		</section>
+		<section id="booking" class="flex-column-center grey">
+			
+			<div class="booking-section">
+				<h2>Оставьте заявку сегодня!</h2>				
+				<fieldset>
+					<legend>Параметры квартиры</legend>
+					 <label for="cars">Количество комнат:</label>
+					<select id="n-rooms" name="n-rooms">
+  						<option value="1">1</option>
+  						<option value="2">2</option>
+  						<option value="3">3</option>
+					</select><br>
+					 <label for="cars">Отделка:</label>
+					<select id="lvl-rooms" name="lvl-rooms">
+  						<option value="no">Без отделки</option>
+  						<option value="min">С отделкой</option>
+  						<option value="max">С мега-отделкой</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Контактная информация</legend>
+					 <form action="/action_page.php">
+  						<label for="submit-name">Имя:</label>
+  						<input type="text" id="submit-name"><br>
+  						<label for="submit-phone">Телефон:</label>
+  						<input type="text" id="submit-phone"><br>
+  						<label for="submit-mail">E-mail:</label>
+  						<input type="text" id="submit-mail">  			
+					</form> 
+				</fieldset>
+				<div class="btn booking-btn">
+					<a href="">Отправить</a>
+				</div>
 			</div>
 		</section>
 	</main>

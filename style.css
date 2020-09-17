@@ -9,8 +9,8 @@ body {
     border: 0;
     color: #303846;
     font-family: Trebuchet MS, sans-serif;
-    font-size: 16px;
-    inline-size: 1.5;
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 h1 {
@@ -22,6 +22,14 @@ h2 {
     margin-top: 0;
     margin-bottom: 0.5em;
     font-size: 1.8em;    
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 a {
@@ -42,20 +50,20 @@ header {
     top: 0;
     left: 0;
     height: 0;
-    width: 100%;   
+    width: 100%; 
+    font-weight: bold;  
     padding: 5px 0; 
 }
 
 .logo {
-    margin-top: 6px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 6px 0 0;
+    padding:0 20px;
     height: 37px;   
 }
 
 .name {
-    flex-grow: 1;   
-    height: 35px;
+    flex-grow: 1; 
+    line-height: 0.7; 
 }
 
 .headermenu{
@@ -63,6 +71,7 @@ header {
     flex-direction: row; 
     top: 5px;
     right: 15px;
+    font-size: 0.85em;
 }
 
 .hdr-menu-li {  
@@ -73,16 +82,19 @@ header {
 
 main {
     width: 100%;
-    margin-top: 60px;  
+    margin-top: 50px;  
 }    
 /* main - 1st section – covering image */
-.first-section {
+.flex-column-center {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 0 80px 0;
+}
+
+.first-section {
+    padding: 60px 0;
     font-weight: bold;
     font-size: 1em;
     color: white;
@@ -97,23 +109,20 @@ main {
 }
     
 .slogan {
-    padding-top: 10px;
+    margin: 0;
+    padding: 10px;
     font-size: 1.2em;
 }
-.border-btn {
-    margin-top: 20px;
-    padding: 12px;
-    font-size: 1em;
-    font-weight: bold;
+.sect1-btn {
+    margin: 0;
     border: white solid 1px;
-    border-radius: 10px;
 }
 
-.border-btn > a {
+.sect1-btn > a {
     text-decoration: none;
 }
 
-.border-btn > a:hover, .border-btn > a:active {
+.sect1-btn > a:hover, .sect1-btn > a:active {
     font-weight: bolder;
 }
 /* main - article section */
@@ -127,7 +136,6 @@ main {
 article {
     width: 30%;
     padding: 60px 40px;
-    
 }
 /*main - "article with image" sections*/
 .img-section {
@@ -153,6 +161,56 @@ article {
 .grey 
  {
     background-color: #f7f7f7;
+}
+/* booking form */
+
+.booking-section {
+    padding: 60px 0;
+    width: 33vw;
+    border-color: #09d3ac;
+}
+
+.booking-section h2 {
+    text-align: center;    
+    margin-bottom: 0; 
+}
+
+legend {
+    font-size: 1.4em;
+    color: #09d3ac;
+}
+
+fieldset {
+    width: 100%;
+    padding: 0 1.5em 1.5em;
+    border-color: #09d3ac;
+    line-height: 2.5;    
+}
+
+label {
+    display: inline-block;
+    width: 40%;
+}
+
+select {
+    width: 55%;
+    font-size: inherit;
+}
+
+input {
+    display: inline-block;
+    height: 2.2em;
+    width: 55%;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.booking-btn {
+    width: 5em;
+    margin-top: 1em;
+    padding: 0.75em 3em;
+    color: #09d3ac;
+    border: #09d3ac solid 1px;
 }
 /* footer */
 footer {  
