@@ -21,12 +21,8 @@ h2 {
     font-size: 1.8em;    
 }
 
-.btn {
-    margin-top: 20px;
-    padding: 12px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 10px;
+li {
+    font-size: smaller;
 }
 
 a {
@@ -35,26 +31,43 @@ a {
 }
 
 a:hover, a:active {     
-   color: black;
    text-decoration: underline;
 }
 
+.btn {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.flex-column-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-white {
+    color: white;
+}
 /* header*/
 
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    top: 0;
-    left: 0;
     height: 60px;
-    font-weight: bold;  
-    padding: 5px 20px; 
-    background-color: #fff;
-    
+    padding: 5px 20px;
+    font-weight: bold; 
+    background-color: #fff;         
 }
 
 .logo-and-name{
@@ -62,21 +75,20 @@ header {
 }
 
 .logo {
-    margin: 6px 0 0;
-    height: 37px;   
+    height: 37px; 
+    margin: 6px 0 0; 
 }
 
 .name {
-    line-height: 0.7;
-    padding-left: 20px; 
+    padding-left: 20px;
+    line-height: 0.7; 
 }
 
 .headermenu{
-    display: flex;
-    flex-direction: row; 
     top: 5px;
     right: 15px;
-    font-size: 0.85em;
+    display: flex;
+    flex-direction: row; 
     list-style: none;
 }
 
@@ -89,21 +101,14 @@ header {
 main {
     width: 100%;  
     margin-top: 60px;
-}    
-/* main - 1st section – covering image */
-.flex-column-center {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
+
+/* main - 1st section – covering image */
 
 .first-section {
     padding: 60px 0;
     font-weight: bold;
-    font-size: 1em;
-    color: white;
+    font-size: 1em;    
     background: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,14 +130,8 @@ main {
     border: white solid 1px;
 }
 
-.sect1-btn > a {
-    text-decoration: none;
-}
-
-.sect1-btn > a:hover, .sect1-btn > a:active {
-    font-weight: bolder;
-}
 /* main - article section */
+
 .article-section {
     display: flex;
     flex-direction: row;
@@ -144,12 +143,14 @@ article {
     width: 30%;
     padding: 60px 40px;
 }
+
 /*main - "article with image" sections*/
+
 .img-section {
     display: flex;
     flex-direction: row;
-    padding: 60px 10em;
     justify-items: center;
+    padding: 60px 10em;
 }    
 
 .img-sect-article {
@@ -169,17 +170,16 @@ article {
  {
     background-color: #f7f7f7;
 }
-/* booking form */
+/* main - booking form */
 
 .booking-section {
-    padding: 60px 0;
     width: 33vw;
-    border-color: #09d3ac;
+    padding: 60px 0;    
 }
 
 .booking-section h2 {
-    text-align: center;    
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    text-align: center;         
 }
 
 legend {
@@ -190,14 +190,13 @@ legend {
 fieldset {
     width: 100%;
     padding: 0 1.5em 1.5em;
-    border-color: #09d3ac;
-    line-height: 3.2;    
+    line-height: 3.2;
+    border-color: #09d3ac;        
 }
 
 label {
     display: inline-block;
-    width: 40%;
-    
+    width: 40%;    
 }
 
 .selectdiv:after {
@@ -208,25 +207,19 @@ label {
     pointer-events: none;
 }
 
-select::-ms-expand {
-display: none;
-}
-
-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+select { 
     appearance: none;
     width: 55%;
-    font-size: smaller;
     height: 2.2em;
+    font-size: smaller;
     border-radius: 10px;
     border-style: solid;
 }
 
 input {
     display: inline-block;
-    height: 2.2em;
     width: 55%;
+    height: 2.2em;
     border-radius: 10px;
     border-style: solid;
 }
@@ -238,20 +231,15 @@ input {
     color: #09d3ac;
     border: #09d3ac solid 1px;
 }
+
 /* footer */
+
 footer {  
+    bottom: 0;    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 60px 0;
-    bottom: 0;
     width: 100%;
+    padding: 60px 0;
     background-color: #303846;
-    color: white;
 }
-
-
-.footer-menu li{
-    font-size: smaller;
-}
-
