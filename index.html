@@ -9,14 +9,14 @@
 <body>
 </body>
 	<header>
-		<img src="images/logo.svg" class="logo">
-		<div class="name">
-			<p>Лунное Море</p>
+		<div class="logo-and-name">
+			<img src="images/logo.svg" class="logo">	
+			<p class="name">Лунное Море</p>			
 		</div>
 	    <nav>
 			<ul class="headermenu">
 				<li class="hdr-menu-li"><div><a href="#article-section">Преимущества</a></div></li>
-				<li class="hdr-menu-li"><div><a href="#image-section1">O ЖК Лунное Море</a></div></li>
+				<li class="hdr-menu-li"><div><a href="#image-section1">O ЖК «Лунное море»</a></div></li>
 				<li class="hdr-menu-li"><div><a href="#image-section2">Места для отдыха</a></div></li>
 			</ul>
 		</nav> 
@@ -69,26 +69,30 @@
 				<h2>Оставьте заявку сегодня!</h2>				
 				<fieldset>
 					<legend>Параметры квартиры</legend>
-					 <label for="cars">Количество комнат:</label>
-					<select id="n-rooms" name="n-rooms">
-  						<option value="1">1</option>
-  						<option value="2">2</option>
-  						<option value="3">3</option>
-					</select><br>
-					 <label for="cars">Отделка:</label>
-					<select id="lvl-rooms" name="lvl-rooms">
-  						<option value="no">Без отделки</option>
-  						<option value="min">С отделкой</option>
-  						<option value="max">С мега-отделкой</option>
-					</select>
+					<div class="selectdiv">
+						<label for="n-rooms">Количество комнат:</label>
+						<select id="n-rooms" name="n-rooms">
+  							<option value="1">1</option>
+  							<option value="2">2</option>
+  							<option value="3">3</option>
+						</select>
+					</div>
+					<div class="selectdiv">
+						<label for="lvl-rooms">Отделка:</label>
+						<select id="lvl-rooms" name="lvl-rooms">
+  							<option value="no">Без отделки</option>
+  							<option value="min">С отделкой</option>
+  							<option value="max">С мега-отделкой</option>
+						</select>
+					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Контактная информация</legend>
 					 <form action="/action_page.php">
   						<label for="submit-name">Имя:</label>
-  						<input type="text" id="submit-name"><br>
+  						<input type="text" id="submit-name">
   						<label for="submit-phone">Телефон:</label>
-  						<input type="text" id="submit-phone"><br>
+  						<input type="text" id="submit-phone">
   						<label for="submit-mail">E-mail:</label>
   						<input type="text" id="submit-mail">  			
 					</form> 
@@ -100,7 +104,35 @@
 		</section>
 	</main>
 	<footer>
-		<p class="footertext">exclusively developed by No Shit Productions</p>
+		<div class="footer-right">
+			<div class="logo-and-name"> 
+				<img src="images/logo.svg" class="logo">
+				<p class="name">Лунное Море</p>
+			</div>    
+				<p><small>&#9400; 2032 год</small></p>		
+		</div>
+		<div class="footer-menu">
+			<p>Проектная документация</p>
+			<ul>
+				<li>
+					<a href="">Cкачать</a>
+				</li>
+				<li>
+					<a href="">Посмотреть на сайте</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<p>О застройщике</p>
+			<ul>
+				<li>
+					<a href="">Отзывы</a>
+				</li>
+				<li>
+					<a href="">Сайт компании</a>
+				</li>
+			</ul>
+		</div>
 	</footer>
 </body>
 </html>

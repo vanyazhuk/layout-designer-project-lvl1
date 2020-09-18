@@ -1,6 +1,3 @@
-/* classes basically in the order 
-as they appear in html */ 
-
 /* global */
 
 body {
@@ -8,8 +5,8 @@ body {
     padding: 0;
     border: 0;
     color: #303846;
-    font-family: Trebuchet MS, sans-serif;
-    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -45,25 +42,33 @@ a:hover, a:active {
 /* header*/
 
 header {
+    position: fixed;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
     top: 0;
     left: 0;
-    height: 0;
-    width: 100%; 
+    height: 60px;
     font-weight: bold;  
-    padding: 5px 0; 
+    padding: 5px 20px; 
+    background-color: #fff;
+    
+}
+
+.logo-and-name{
+    display: inline-flex;
 }
 
 .logo {
     margin: 6px 0 0;
-    padding:0 20px;
     height: 37px;   
 }
 
 .name {
-    flex-grow: 1; 
-    line-height: 0.7; 
+    line-height: 0.7;
+    padding-left: 20px; 
 }
 
 .headermenu{
@@ -72,17 +77,18 @@ header {
     top: 5px;
     right: 15px;
     font-size: 0.85em;
+    list-style: none;
 }
 
-.hdr-menu-li {  
-    padding-right: 30px;    
+.hdr-menu-li {
+    padding-left: 20px;         
 }
 
 /* main */
 
 main {
-    width: 100%;
-    margin-top: 50px;  
+    width: 100%;  
+    margin-top: 60px;
 }    
 /* main - 1st section – covering image */
 .flex-column-center {
@@ -105,7 +111,8 @@ main {
 }
 
 .sect1-logo {
-    width: 12%;
+    width: 13%;
+    padding: 10px;
 }
     
 .slogan {
@@ -114,7 +121,7 @@ main {
     font-size: 1.2em;
 }
 .sect1-btn {
-    margin: 0;
+    margin: 10px;
     border: white solid 1px;
 }
 
@@ -130,7 +137,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 110px;  
+    padding: 10px 110px;  
 }
 
 article {
@@ -147,11 +154,11 @@ article {
 
 .img-sect-article {
     flex: 0 1 45%;
-    padding: 0 3em;
+    padding: 10px 3em;
 }
 .image-box {
     flex: 0 1 30%;
-    padding: 0 3em;
+    padding: 10px 3em;
     object-fit: contain;
 }
 .img-section img {
@@ -184,17 +191,36 @@ fieldset {
     width: 100%;
     padding: 0 1.5em 1.5em;
     border-color: #09d3ac;
-    line-height: 2.5;    
+    line-height: 3.2;    
 }
 
 label {
     display: inline-block;
     width: 40%;
+    
+}
+
+.selectdiv:after {
+    content: 'v';
+    position: relative;
+    left: -1.5em;
+    color: #303846;
+    pointer-events: none;
+}
+
+select::-ms-expand {
+display: none;
 }
 
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 55%;
-    font-size: inherit;
+    font-size: smaller;
+    height: 2.2em;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 input {
@@ -214,10 +240,18 @@ input {
 }
 /* footer */
 footer {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 60px 0;
     bottom: 0;
     width: 100%;
+    background-color: #303846;
+    color: white;
 }
 
-.footertext {
-    text-align: center;
+
+.footer-menu li{
+    font-size: smaller;
 }
+
