@@ -137,14 +137,13 @@ main {
 .article-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 1000px;
-    padding: 10px 0;
+    padding: 60px 0;
 }
 
 article {
     width: 30%;
-    padding: 60px 40px;
 }
 
 /*main - "article with image" sections*/
@@ -152,18 +151,18 @@ article {
 .img-section {
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    width: 1000px;
+    justify-content: center;
+    width: 100%;
     padding: 60px 0;
 }
 
 .img-sect-article {
-    flex: 0 1 45%;
+    width: 450px;
     padding: 10px 3em;
 }
 
 .image-box {
-    flex: 0 1 30%;
+    width: 300px;
     padding: 10px 3em;
     object-fit: contain;
 }
@@ -173,7 +172,7 @@ article {
     max-height:100%;
 }
 
-.grey{
+.grey {
     background-color: #f7f7f7;
 }
 
@@ -204,6 +203,20 @@ fieldset {
 label {
     display: inline-block;
     width: 40%;
+    font-weight: bold;
+}
+
+.form-field {
+    width: 55%;
+    height: 2.2em;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+select {
+    appearance: none;
+    font-size: smaller;
 }
 
 .selectdiv:after {
@@ -212,23 +225,6 @@ label {
     left: -1.5em;
     color: #303846;
     pointer-events: none;
-}
-
-select {
-    appearance: none;
-    width: 55%;
-    height: 2.2em;
-    font-size: smaller;
-    border-radius: 10px;
-    border-style: solid;
-}
-
-input {
-    display: inline-block;
-    width: 55%;
-    height: 2.2em;
-    border-radius: 10px;
-    border-style: solid;
 }
 
 .booking-btn {
@@ -249,4 +245,5 @@ footer {
     width: 100%;
     padding: 60px 0;
     background-color: #303846;
+    font-weight: bold;
 }
