@@ -34,11 +34,20 @@ a:hover, a:active {
    text-decoration: underline;
 }
 
+section, footer {
+    padding: 60px 0;
+}
+
 .btn {
     margin-top: 20px;
     padding: 12px;
     font-size: 1em;
     font-weight: bold;
+}
+
+.border-rounded {
+    border: solid;
+    border-width: 1px;
     border-radius: 10px;
 }
 
@@ -50,6 +59,10 @@ a:hover, a:active {
     justify-content: center;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 .text-white {
     color: white;
 }
@@ -60,8 +73,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
@@ -88,8 +99,6 @@ header {
 .headermenu{
     top: 5px;
     right: 15px;
-    display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
@@ -107,7 +116,6 @@ main {
 /* main - 1st section – covering image */
 
 .first-section {
-    padding: 60px 0;
     font-weight: bold;
     font-size: 1em;
     background: url(images/banner.png);
@@ -129,17 +137,14 @@ main {
 
 .sect1-btn {
     margin: 10px;
-    border: white solid 1px;
+    border-color: white;
 }
 
 /* main - article section */
 
 .article-section {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 1000px;
-    padding: 60px 0;
 }
 
 article {
@@ -149,11 +154,8 @@ article {
 /*main - "article with image" sections*/
 
 .img-section {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding: 60px 0;
 }
 
 .img-sect-article {
@@ -180,7 +182,6 @@ article {
 
 .booking-section {
     width: 33vw;
-    padding: 60px 0;
 }
 
 .booking-section h2 {
@@ -209,8 +210,6 @@ label {
 .form-field {
     width: 55%;
     height: 2.2em;
-    border-radius: 10px;
-    border-style: solid;
     border-color: #ccc;
 }
 
@@ -229,21 +228,17 @@ select {
 
 .booking-btn {
     width: 5em;
-    margin-top: 1em;
     padding: 0.75em 3em;
     color: #09d3ac;
-    border: #09d3ac solid 1px;
+    border-color: #09d3ac;
 }
 
 /* footer */
 
 footer {
     bottom: 0;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    padding: 60px 0;
     background-color: #303846;
     font-weight: bold;
 }
